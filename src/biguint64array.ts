@@ -34,8 +34,4 @@ export class BigUint64ArrayPolyfill extends DataView {
       let arrayBuf = this.buffer.slice(offset, offset + this.byteLength);
       return this.arrayBufToBigInt(arrayBuf, littleEndian);
     }
-  
-    [Symbol.iterator] = (index?: number) => {
-      console.log('Iterator Called!');
-    };
   }
